@@ -6,7 +6,6 @@ function useSpotifyApi(clientId, clientSecret) {
 
     useEffect(() => {
         const sdk = SpotifyApi.withClientCredentials(clientId, clientSecret);
-
         setSdk(() => sdk);
     }, [clientId, clientSecret]);
 
